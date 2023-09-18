@@ -3,13 +3,13 @@
     <div class="content-nav-bar" id="nav">
       <img src="@/assets/logo.svg">
       <div>
-        <router-link class="item-nav" :to="{}">
+        <router-link class="item-nav" :to="{name:'Leydetransparencia'}">
           Ley de transparencia
         </router-link>
-        <router-link class="item-nav" :to="{}">
+        <router-link class="item-nav" :to="{name:'QuienesSomos'}">
           Quienes somos
         </router-link>
-        <router-link class="item-nav" :to="{}">
+        <router-link class="item-nav" :to="{name:'Afiliados'}">
           Afiliados
         </router-link>
       </div>
@@ -19,16 +19,16 @@
       </button>
     </div>
     <div class="content-sub-nav">
-      <router-link class="item-nav" :to="{}">
+      <router-link class="item-nav" :to="{name:'home'}">
         INICIO
       </router-link>
-      <router-link class="item-nav" :to="{}">
+      <router-link class="item-nav" :to="{name:'CatalogodeServicios'}">
         CATALOGO DE SERVICIOS
       </router-link>
-      <router-link class="item-nav" :to="{}">
+      <router-link class="item-nav" :to="{name:'Precios'}">
         PRECIOS
       </router-link>
-      <router-link class="item-nav" :to="{}">
+      <router-link class="item-nav" :to="{name:'TiendaNaturista'}">
         TIENDA NATURISTA
       </router-link>
     </div>
