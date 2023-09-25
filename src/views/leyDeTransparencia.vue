@@ -1,7 +1,23 @@
 <template>
     <div>
         <nav-bar/>
-        Hola soy Ley de transparencia
+        <div class="container-header-leytransparencia">
+            <img src="@/assets/imgLeyDeTransparencia.svg" class="img-ley-transparencia">
+            <div class="content-header">
+                <p class="text-nav">
+                    Inicio / Ley de Transparencia
+                </p>
+                <h1 class="title-header">
+                    Ley de Transparencia EPS  
+                </h1>
+                <p class="text-header">
+                    Ley 1712 de 2014: “Por medio de la cual se crea la Ley de Transparencia y del derecho de acceso a la Información Pública Nacional y se dictan otras disposiciones”.
+                </p>
+
+            </div>
+
+
+        </div>
     </div>
 </template>
 <script>
@@ -13,3 +29,27 @@ export default {
     }
 }
 </script>
+<style>
+.img-ley-transparencia{
+    width:100%;
+}
+.container-header-leytransparencia{
+    width:100%;
+    position:relative;
+}
+.content-header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    background-color:#EEEEEC;
+    height:100%;
+    padding:1rem;
+}
+.text-nav{
+    margin-bottom:1rem;
+}
+.text-header{
+    max-width:500px;
+}
+</style>
