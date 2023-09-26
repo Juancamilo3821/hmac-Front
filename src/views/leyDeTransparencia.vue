@@ -13,10 +13,53 @@
                 <p class="text-header">
                     Ley 1712 de 2014: “Por medio de la cual se crea la Ley de Transparencia y del derecho de acceso a la Información Pública Nacional y se dictan otras disposiciones”.
                 </p>
-
             </div>
 
-
+        </div>
+        <div class="content-leytransparencia">
+            <p class="text-leytransparencia">
+                Información de interés
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Estructura orgánica y talento humano
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Normatividad
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Presupuesto
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Planeación
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Control
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Contratación
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Trámites y servicios
+            </p>
+        </div>
+        <div class="content-subleytransparencia">
+            <p class="text-leytransparencia">
+                Protección de datos personales
+            </p>
         </div>
     </div>
 </template>
@@ -47,9 +90,52 @@ export default {
     padding:1rem;
 }
 .text-nav{
+    margin-bottom:2rem;
+}
+.title-header{
     margin-bottom:1rem;
+    font-family: 'Inter', sans-serif;
+    color:#53A920;
+    font-weight:bold;
 }
 .text-header{
     max-width:500px;
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
+}
+.content-leytransparencia{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    width:60%;
+    justify-content:left;
+    text-decoration: none;
+    color: black;
+    background-color: #D9D9D9;
+    padding: 1rem;
+    border-radius: 40px;
+    margin-left:8rem;
+    margin-top:8rem;
+}
+.content-subleytransparencia{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    width:60%;
+    justify-content:left;
+    text-decoration: none;
+    color: black;
+    background-color: #D9D9D9;
+    padding: 1rem;
+    border-radius: 40px;
+    margin-left:8rem;
+    margin-top:2rem;
+}
+.text-leytransparencia{
+    align-items:center;
+    justify-content:center;
+    margin:0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
 }
 </style>

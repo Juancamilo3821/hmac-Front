@@ -1,7 +1,14 @@
 <template>
     <div>
         <nav-bar/>
-        <img src="@/assets/catalogueServices.svg" class="img-header" style = "width: 100%">
+        <div class="container-header-catalogo">
+            <img src="@/assets/catalogueServices.svg" class="img-header" style = "width: 100%">
+            <div class="content-header">
+                <p class="text-nav">
+                    Inicio / Nuestros servicios
+                </p>
+            </div>
+        </div>
         <div class="container-sub-title">
             <span class="line-subtitle"></span>
             <h2 class="subtitle-catalogo subtitle-catalogo--left">
@@ -104,6 +111,20 @@ export default {
 }
 </script>
 <style>
+    .container-header-catalogo{
+        width:100%;
+        position:relative;
+    }
+    .content-header{
+        position:absolute;
+        top:0;
+        left:0;
+        width:50%;
+        padding:1rem;
+    }
+    .text-nav{
+         margin-bottom:2rem;
+    }
     .img-header{
         margin-bottom: 4rem;
     }
