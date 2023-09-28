@@ -13,7 +13,7 @@
           Afiliados
         </router-link>
       </div>
-      <button class="boton-nav-login">
+      <button class="boton-nav-login" @click="$router.push({name: 'IniciarSesion'})">
         Iniciar Sesión
         <img src="@/assets/icons/icon-person.svg">
       </button>
