@@ -6,6 +6,11 @@ const routes = [
       component: () => import(/* webpackChunkName: "home" */ '../views/homePage.vue')
     },
     {
+      path: '/Leydetransparencia',
+      name: 'Leydetransparencia',
+      component: () => import(/* webpackChunkName: "about" */ '../views/leyDeTransparencia.vue')
+    },
+    {
         path: '/Leydetransparencia',
         name: 'Leydetransparencia',
         component: () => import(/* webpackChunkName: "about" */ '../views/leyDeTransparencia.vue')
