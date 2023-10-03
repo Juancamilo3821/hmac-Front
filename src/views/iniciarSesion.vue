@@ -10,10 +10,10 @@
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
                 </div>
-                <form action="" class="form-hmac">
+                <form action="" class="form-hmac" method="post">
                     <div class="container-input">
-                        <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
+                        <img src="@/assets/icons/row-right.svg">|||||||||||||||||||||
+                        <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico" name="email">
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
