@@ -20,9 +20,6 @@ module.exports = app => {
   
     // Eliminar todos los usuarios
     router.delete("/", Usuario.removeAll);
-
-    // If you intend to use findAllPublished:
-    // router.get("/published", Usuario.findAllPublished);
   
     app.use('/api/Usuario', router);
 
