@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Bienvenidos a HMAC" });
 });
 
-require("./app/routes/tutorial.routes.js")(app);
+require("../backend/routes/hmac.routes.js")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

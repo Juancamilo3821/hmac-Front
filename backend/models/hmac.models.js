@@ -59,10 +59,10 @@ Usuario.getAll = (nombre, result) => {
   });
 };
 
-Usuario.updateById = (id, tutorial, result) => {
+Usuario.updateById = (id, usuario, result) => {
   sql.query(
-    "UPDATE usuario SET NOMBRE_USUARIO = ? WHERE id = ?",
-    [usuario.NOMBRE_USUARIO, usuario.idUsuario],
+    "UPDATE usuario SET NOMBRE_USUARIO = ? WHERE idUsuario = ?",
+    [usuario.NOMBRE_USUARIO, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
@@ -71,19 +71,19 @@ Usuario.updateById = (id, tutorial, result) => {
       }
 
       if (res.affectedRows == 0) {
-        // not found Tutorial with the id
+        // not found user with the id
         result({ kind: "not_found" }, null);
         return;
       }
 
-      console.log("updated tutorial: ", { id: id, ...tutorial });
-      result(null, { id: id, ...tutorial });
+      console.log("acutalizado el nombre de usuario: ", { id: id, ...usuario });
+      result(null, { id: id, ...usuario });
     }
   );
 };
 
 Usuario.remove = (id, result) => {
-  sql.query("DELETE FROM tutorials WHERE id = ?", id, (err, res) => {
+  sql.query("DELETE FROM usuarios WHERE idUsuario = ?", id, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
@@ -91,25 +91,25 @@ Usuario.remove = (id, result) => {
     }
 
     if (res.affectedRows == 0) {
-      // not found Tutorial with the id
+      // se se encuentra el usuario con el ID
       result({ kind: "not_found" }, null);
       return;
     }
 
-    console.log("deleted tutorial with id: ", id);
+    console.log("eliminado usuario con id: ", id);
     result(null, res);
   });
 };
 
 Usuario.removeAll = result => {
-  sql.query("DELETE FROM tutorials", (err, res) => {
+  sql.query("DELETE FROM usuario", (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
       return;
     }
 
-    console.log(`deleted ${res.affectedRows} tutorials`);
+    console.log(`eliminados ${res.affectedRows} usuarios`);
     result(null, res);
   });
 };
