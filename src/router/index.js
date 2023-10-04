@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 const routes = [
     {
       path: '/',
@@ -51,10 +52,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/tiendaNaturista.vue')
       },
 ]
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
-    mode: 'history',
-  })
   
-  export default router
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+  mode: 'hash',
+})
+
+export default router

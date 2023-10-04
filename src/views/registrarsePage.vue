@@ -21,7 +21,7 @@
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
+                        <input v-model="userData.email" type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
                     <!-- <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
@@ -29,10 +29,10 @@
                     </div> -->
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Contraseña">
+                        <input v-model="userData.password" type="text" style="flex: 1 0 0%" placeholder="Contraseña">
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
-                        <button class="btn-primario">
+                        <button class="btn-primario" @click="submitForm">
                             CREAR CUENTA
                         </button>
                     </div>
@@ -58,8 +58,6 @@ export default {
   data() {
     return {
       userData: {
-        nombre: '',
-        apellido: '',
         email: '',
         password: ''
       }
@@ -72,7 +70,7 @@ export default {
         console.log(response.data);
         // Optionally, you can redirect the user to a different page after successful registration.
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     }
   }

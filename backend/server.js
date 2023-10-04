@@ -3,22 +3,20 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require('path');
 
-const staticPath = path.join(__dirname, '../backend/views/');
-
 const app = express();
 
-app.use(express.static(staticPath));
+app.use(express.static(path.join(__dirname, '..', 'build')));
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8080"
 };
 
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function (req,res) {
-  res.sendFile(path + "index.html");
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
 
 require("../backend/routes/hmac.routes.js")(app);
