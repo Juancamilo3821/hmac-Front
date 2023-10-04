@@ -5,7 +5,7 @@ import router from './router'
 import axios from 'axios';
 
 import '@/styles/style.css'
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'http://localhost:3000';
 
 const app = createApp(App);
 

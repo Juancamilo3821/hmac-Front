@@ -23,10 +23,6 @@
                         <img src="@/assets/icons/row-right.svg">
                         <input v-model="userData.NOMBRE_USUARIO" type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
-                    <!-- <div class="container-input">
-                        <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Cedula de ciudadania">
-                    </div> -->
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
                         <input v-model="userData.HASH" type="text" style="flex: 1 0 0%" placeholder="Contraseña">
@@ -61,21 +57,37 @@ export default {
   data() {
     return {
       userData: {
-        NOMBRE_USUARIO: '',
-        HASH: '',
-        ESTADO: 'Activo',
+        NOMBRE_USUARIO: "",
+        HASH: "",
+        ESTADO: "Activo",
         TIPO_USUARIO_ID: 1
       }
     };
   },
   methods: {
     async submitForm() {
+        if (!this.userData) {
+            this.userData = {};
+        }
         try {
-        const response = await axios.post('/api/Usuario', this.userData);
+        console.log("NOMBRE_USUARIO data type:", typeof this.userData.NOMBRE_USUARIO);
+        console.log("HASH data type:", typeof this.userData.HASH);
+        console.log("ESTADO data type:", typeof this.userData.ESTADO);
+        console.log("TIPO_USUARIO_ID data type:", typeof this.userData.TIPO_USUARIO_ID);
+
+        const dataToSend = {
+        NOMBRE_USUARIO: this.userData.NOMBRE_USUARIO,
+        HASH: this.userData.HASH,
+        ESTADO: this.userData.ESTADO,
+        TIPO_USUARIO_ID: this.userData.TIPO_USUARIO_ID
+        };
+        
+        let response = await axios.post('/api/Usuario', {some: "dataToSend"});
+        console.log(result.response.data);
         console.log(response.data);
         // Optionally, you can redirect the user to a different page after successful registration.
       } catch (error) {
-        console.log(error);
+        console.error(error.response.data);
       }
     }
   }
