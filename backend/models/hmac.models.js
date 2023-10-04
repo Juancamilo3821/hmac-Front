@@ -4,14 +4,15 @@ const sql = require("./db.js");
 const Usuario = function(usuario) {
   this.NOMBRE_USUARIO = usuario.NOMBRE_USUARIO;
   this.HASH = usuario.HASH;
-  this.ESTADO = "Activo";
-  this.TIPO_USUARIO_ID = 1;
+  this.ESTADO = usuario.ESTADO;
+  this.TIPO_USUARIO_ID = usuario.TIPO_USUARIO_ID;
 };
 
 Usuario.create = (newUsuario, result) => {
+  console.log("newUsuario object:", newUsuario);
   sql.query("INSERT INTO usuario (NOMBRE_USUARIO, HASH, ESTADO, TIPO_USUARIO_ID) VALUES(?,?,?,?)", newUsuario, (err, res) => {
     if (err) {
-      console.log("error: ", err);
+      console.log("error",err); 
       result(err, null);
       return;
     }

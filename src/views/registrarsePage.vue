@@ -21,7 +21,7 @@
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input v-model="userData.email" type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
+                        <input v-model="userData.NOMBRE_USUARIO" type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
                     <!-- <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
@@ -29,7 +29,7 @@
                     </div> -->
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input v-model="userData.password" type="text" style="flex: 1 0 0%" placeholder="Contraseña">
+                        <input v-model="userData.HASH" type="text" style="flex: 1 0 0%" placeholder="Contraseña">
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
                         <button class="btn-primario" @click="submitForm">
@@ -54,19 +54,24 @@
     </div>
 </template>
 <script>
+
+import axios from 'axios';
+
 export default {
   data() {
     return {
       userData: {
-        email: '',
-        password: ''
+        NOMBRE_USUARIO: '',
+        HASH: '',
+        ESTADO: 'Activo',
+        TIPO_USUARIO_ID: 1
       }
     };
   },
   methods: {
     async submitForm() {
-      try {
-        const response = await this.$axios.post('/api/Usuario', this.userData);
+        try {
+        const response = await axios.post('/api/Usuario', this.userData);
         console.log(response.data);
         // Optionally, you can redirect the user to a different page after successful registration.
       } catch (error) {

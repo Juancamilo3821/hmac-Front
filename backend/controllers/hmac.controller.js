@@ -1,7 +1,7 @@
 const Usuario = require("../models/hmac.models.js");
 
 // Crear y guardar usuario
-exports.create = (req, res) => {
+exports.create = async (req, res) => {
     // Validar
     if (!req.body) {
       res.status(400).send({
@@ -19,13 +19,12 @@ exports.create = (req, res) => {
   
     // Guardar usuario en la BD
     Usuario.create(usuario, (err, data) => {
-      if (err)
-        res.status(500).send({
-          message:
-            err.message || "Some error occurred while creating the user."
-        });
-      else res.send(data);
-    });
+    if (err)
+      res.status(500).send({
+        message: err.message || "Some error occurred while creating the user."
+      });
+    else res.send(data);
+  });
   };
 
 // Conseguir todos los usuarios
