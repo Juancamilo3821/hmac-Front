@@ -13,8 +13,6 @@ exports.create = async (req, res) => {
     const usuario = new Usuario({
       NOMBRE_USUARIO: req.body.NOMBRE_USUARIO,
       HASH: req.body.HASH,
-      ESTADO: req.body.ESTADO,
-      TIPO_USUARIO_ID: req.body.TIPO_USUARIO_ID
     });
   
     // Guardar usuario en la BD

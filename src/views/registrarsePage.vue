@@ -10,7 +10,7 @@
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
                 </div>
-                <form action="" class="form-hmac">
+                <form action="/Registrarse" class="form-hmac">
                     <div style="display: flex; width: 100%;">
                         <div class="container-input" style="margin-right: .5rem;">
                             <input type="text" style="flex: 1 0 0%" placeholder="Nombre">
@@ -58,9 +58,7 @@ export default {
     return {
       userData: {
         NOMBRE_USUARIO: "",
-        HASH: "",
-        ESTADO: "Activo",
-        TIPO_USUARIO_ID: 1
+        HASH: ""
       }
     };
   },
@@ -72,18 +70,13 @@ export default {
         try {
         console.log("NOMBRE_USUARIO data type:", typeof this.userData.NOMBRE_USUARIO);
         console.log("HASH data type:", typeof this.userData.HASH);
-        console.log("ESTADO data type:", typeof this.userData.ESTADO);
-        console.log("TIPO_USUARIO_ID data type:", typeof this.userData.TIPO_USUARIO_ID);
 
         const dataToSend = {
         NOMBRE_USUARIO: this.userData.NOMBRE_USUARIO,
-        HASH: this.userData.HASH,
-        ESTADO: this.userData.ESTADO,
-        TIPO_USUARIO_ID: this.userData.TIPO_USUARIO_ID
+        HASH: this.userData.HASH
         };
         
-        let response = await axios.post('/api/Usuario', {some: "dataToSend"});
-        console.log(result.response.data);
+        let response = await axios.post('/api/Usuario', dataToSend);
         console.log(response.data);
         // Optionally, you can redirect the user to a different page after successful registration.
       } catch (error) {
