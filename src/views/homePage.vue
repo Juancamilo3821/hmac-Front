@@ -8,7 +8,7 @@
                 MEDIOS DE PAGO
                 <img src="@/assets/icons/payments.svg">
             </button>
-            <button class="boton-nav-login">
+            <button class="boton-nav-login" @click="$router.push({name: 'CitaVirtual'})">
                 CITA VIRTUAL
                 <img src="@/assets/icons/appointment.svg">
             </button>

@@ -50,6 +50,16 @@ const routes = [
         name: 'TiendaNaturista',
         component: () => import(/* webpackChunkName: "about" */ '../views/tiendaNaturista.vue')
       },
+      {
+        path: '/CitaVirtual',
+        name: 'CirtualVirtual',
+        component: () => import(/* webpackChunkName: "about" */ '../views/citaVirtual.vue')
+      },
+      {
+        path: '/CitaVirtual',
+        name: 'CitaVirtual',
+        component: () => import(/* webpackChunkName: "about" */ '../views/citaVirtual.vue')
+      },
 ]
 const router = createRouter({
     history: createWebHistory(),
