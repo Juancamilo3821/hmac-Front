@@ -64,12 +64,9 @@ export default {
   },
   methods: {
     async submitForm() {
-        if (!this.userData) {
-            this.userData = {};
-        }
         try {
-        console.log("NOMBRE_USUARIO data type:", typeof this.userData.NOMBRE_USUARIO);
-        console.log("HASH data type:", typeof this.userData.HASH);
+        console.log("NOMBRE_USUARIO data type:", this.userData.NOMBRE_USUARIO);
+        console.log("HASH data type:", this.userData.HASH);
 
         const dataToSend = {
         NOMBRE_USUARIO: this.userData.NOMBRE_USUARIO,
