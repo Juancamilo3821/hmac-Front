@@ -17,6 +17,8 @@
                             <img src="@/assets/icons/tipoDocumento.svg">
                             Tipo de documento: *
                         </p>
+                    </div>
+                    <div class="content-item-cita">
                         <p class="title-item-cita"> 
                             <img src="@/assets/icons/numDocumento.svg">
                             Número de documento: *
