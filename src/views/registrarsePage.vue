@@ -21,7 +21,7 @@
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
+                        <input v-model="userData.NOMBRE_USUARIO" type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
                     <div class="container-input-identidad">
                         <div class="opciones-identidad">
@@ -41,10 +41,10 @@
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Contraseña">
+                        <input v-model="userData.HASH" type="text" style="flex: 1 0 0%" placeholder="Contraseña">
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
-                        <button class="btn-primario">
+                        <button class="btn-primario" @click="Registrar()">
                             CREAR CUENTA
                         </button>
                     </div>
@@ -66,6 +66,30 @@
     </div>
 </template>
 <script>
+
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      userData: {
+        NOMBRE_USUARIO: "",
+        HASH: ""
+      }
+    };
+  },
+  methods: {
+    async Registrar() {
+        try {
+        await axios.post('http://localhost:5000/api/users', this.userData);
+
+      } catch (error) {
+        console.error(error.response.data);
+      }
+    }
+  }
+};
+
 </script>
 <style>
 .container-input-identidad{
