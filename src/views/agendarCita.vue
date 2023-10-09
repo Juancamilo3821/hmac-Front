@@ -4,25 +4,27 @@
         <div class="container-cita-content">
             <div class="content-cita" width="100%">
                 <div class="container-cita-card">
-                    <img src="@/assets/icons/hmacLogo.svg" class="logo-cita-card">
+                    <button @click="$router.push({name: 'home'})" style="border:none; background-color:transparent;">
+                        <img src="@/assets/icons/logo.svg">
+                    </button >
                 </div>
                 <div class="content-item-cita">
                 
                     <p class="title-item-cita">
                         <img src="@/assets/icons/tipoDocumento.svg">
-                        Departamento:
+                        <input type="text" style="flex: 1 0 0%" placeholder="Departamento: ">
                      </p>
                 </div>
                 <div class="content-item-cita">
                     <p class="title-item-cita"> 
                         <img src="@/assets/icons/numDocumento.svg">
-                         Ciudad:
+                         <input type="text" style="flex: 1 0 0%" placeholder="Ciudad: ">
                     </p>
                 </div>
                 <div class="content-item-cita">
                     <p class="title-item-cita"> 
                         <img src="@/assets/icons/numDocumento.svg">
-                         Especialidad:
+                         <input type="text" style="flex: 1 0 0%" placeholder="Especialidad: ">
                     </p>
                 </div>
                 <div class="container-input-fecha">

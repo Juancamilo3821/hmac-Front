@@ -3,20 +3,22 @@
         <div class="container-form-login">
             <div class="form-login">
                 <div class="header-login">
-                    <button @click="$router.push({name: 'home'})" style="border: none; background-color:transparent;">
-                        <img src="@/assets/icons/row-right.svg">
+                    <button @click="$router.push({name: 'home'})" style="border: none; background-color:transparent; ">
+                        <img src="@/assets/icons/iconHome.svg">
                         Inicio
-                    </button>  
-                    <img src="@/assets/icons/logo.svg">
+                    </button>
+                    <button @click="$router.push({name: 'home'})" style="border:none; background-color:transparent;">
+                        <img src="@/assets/icons/logo.svg">
+                    </button >
                     <div style="padding: 0px 2rem"></div>
                 </div>
                 <form action="" class="form-hmac">
                     <div class="container-input">
-                        <img src="@/assets/icons/row-right.svg">
+                        <img src="@/assets/icons/iconUser.svg">
                         <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
                     <div class="container-input">
-                        <img src="@/assets/icons/row-right.svg">
+                        <img src="@/assets/icons/numDocumento.svg">
                         <input type="text" style="flex: 1 0 0%" placeholder="Contraseña">
                     </div>
                     <div style="display: flex; padding-top: 1rem;">

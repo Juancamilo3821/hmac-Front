@@ -15,13 +15,13 @@
                     <div class="content-item-cita">
                         <p class="title-item-cita">
                             <img src="@/assets/icons/tipoDocumento.svg">
-                            Tipo de documento: *
+                            <input type="text" style="flex: 1 0 0%" placeholder="Tipo de documento: ">
                         </p>
                     </div>
                     <div class="content-item-cita">
                         <p class="title-item-cita"> 
                             <img src="@/assets/icons/numDocumento.svg">
-                            Número de documento: *
+                            <input type="text" style="flex: 1 0 0%" placeholder="Número de documento: ">
                         </p>
                     </div>
                     <button class="button-item-cita"  @click="$router.push({name: 'AgendarCita'})">
