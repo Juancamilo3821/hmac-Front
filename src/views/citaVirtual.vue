@@ -11,6 +11,7 @@
                     <p class="text-cita">
                         Los campos señalados con asterisco (*) son obligatorios, revisa muy bien los datos antes de finalizar, recuerda que los datos que estás registrando son los que HMAC tomará para tramitar tu solicitud.
                     </p>
+                    
                     <div class="content-item-cita">
                         <p class="title-item-cita">
                             <img src="@/assets/icons/tipoDocumento.svg">
@@ -21,7 +22,7 @@
                             Número de documento: *
                         </p>
                     </div>
-                    <button class="button-item-cita">
+                    <button class="button-item-cita"  @click="$router.push({name: 'AgendarCita'})">
                         INGRESAR
                     </button>
                     <p class="text-post-button"> 
@@ -152,3 +153,4 @@ export default {
 }
 
 </style>
+

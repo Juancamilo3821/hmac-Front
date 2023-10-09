@@ -60,6 +60,11 @@ const routes = [
         name: 'CitaVirtual',
         component: () => import(/* webpackChunkName: "about" */ '../views/citaVirtual.vue')
       },
+      {
+        path: '/AgendarCita',
+        name: 'AgendarCita',
+        component: () => import(/* webpackChunkName: "about" */ '../views/agendarCita.vue')
+      },
 ]
 const router = createRouter({
     history: createWebHistory(),

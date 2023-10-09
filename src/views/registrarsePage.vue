@@ -3,10 +3,10 @@
         <div class="container-form-login">
             <div class="form-login">
                 <div class="header-login">
-                    <p style="padding: 0 1px">
+                    <button @click="$router.push({name: 'home'})" style="border: none; background-color:transparent;">
                         <img src="@/assets/icons/row-right.svg">
                         Inicio
-                    </p>
+                    </button>   
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
                 </div>
@@ -23,9 +23,21 @@
                         <img src="@/assets/icons/row-right.svg">
                         <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
                     </div>
-                    <div class="container-input">
-                        <img src="@/assets/icons/row-right.svg">
-                        <input type="text" style="flex: 1 0 0%" placeholder="Cedula de ciudadania">
+                    <div class="container-input-identidad">
+                        <div class="opciones-identidad">
+                            <select placeholder="Identidad">
+                                <option value="CC" title="Cédula de ciudadania">CC</option>
+                                <option value="TI" title="Tarjeta de identidad">TI</option>
+                                <option value="CE" title="Cédula de extranjeria">CE </option>
+                                <option value="PAS" title="Pasaporte">PAS</option>
+                            </select>
+                        </div>
+                        <div class="select-identidad">
+                            <div class="content-identidad">
+                                <img src="@/assets/icons/docImg.svg">
+                                <input type="text" style="flex: 1 0 0%" placeholder="N° de Documento">
+                            </div>
+                        </div>
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
@@ -55,3 +67,41 @@
 </template>
 <script>
 </script>
+<style>
+.container-input-identidad{
+    background-color: #d9d9d9;
+    padding: .4rem 1rem;
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 1.5rem;
+    min-width: calc(50% - 2rem);
+    flex-wrap: wrap;
+}
+.opciones-identidad{
+    align-items:right;
+    width: 30%;
+    overflow: hidden;
+    padding: 0 .5rem;
+    border-right:1px solid #b5b5b5;
+}
+.opciones-identidad select {
+    width: 100%;
+    background-color: transparent;
+    border-color: #d9d9d9;
+    min-height: 35px;
+}
+.opciones-identidad select:focus-visible {
+    outline: none;
+}
+.select-identidad {
+    width: 70%;
+    padding-left: .5rem;
+}
+.content-identidad {
+    display:flex;
+    width: 100%;
+}
+.content-identidad input {
+    width: 100%;
+}
+</style>

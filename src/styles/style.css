@@ -67,6 +67,7 @@ input:focus, input:focus-visible {
     display: flex;
     margin-bottom: 1.5rem;
     min-width: calc(50% - 2rem);
+    flex-wrap: wrap;
 }
 .container-info-login {
     display: flex;

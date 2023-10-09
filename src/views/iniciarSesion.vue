@@ -3,10 +3,10 @@
         <div class="container-form-login">
             <div class="form-login">
                 <div class="header-login">
-                    <p style="padding: 0 1px">
+                    <button @click="$router.push({name: 'home'})" style="border: none; background-color:transparent;">
                         <img src="@/assets/icons/row-right.svg">
                         Inicio
-                    </p>
+                    </button>  
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
                 </div>
