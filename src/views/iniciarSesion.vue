@@ -70,7 +70,13 @@ export default {
             try {
                 await axios.post('http://localhost:5000/api/login', this.userData);
             } catch (error) {
-                console.error(error.response.data);
+                if (error.response.status === 404) {
+                    alert('No existe este usuario.');
+                } else if (error.response.status === 401){
+                    alert('Contraseña incorrecta');
+                } else {
+                    alert(error.response.data.message);
+                }
             }
         }
     }

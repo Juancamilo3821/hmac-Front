@@ -9,11 +9,12 @@
                     </button>
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
-                </div> 
+                </div>
                 <form action="" class="form-hmac">
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
-                        <input v-model="userData.NOMBRE_USUARIO" @input="validateEmail" type="email" style="flex: 1 0 0%" placeholder="Correo electrónico">
+                        <input v-model="userData.NOMBRE_USUARIO" @input="validateEmail" type="email" style="flex: 1 0 0%"
+                            placeholder="Correo electrónico">
                         <div v-if="!emailValid" class="error-message">El correo electrónico no es válido.</div>
                     </div>
                     <div class="container-input">
@@ -53,7 +54,7 @@ export default {
                 NOMBRE_USUARIO: "",
                 HASH: ""
             },
-            emailValid: true, // Inicialmente, suponemos que el correo es válido.
+            emailValid: true,
         };
     },
     methods: {
@@ -63,14 +64,17 @@ export default {
         },
         async Registrar() {
             if (!this.emailValid) {
-                // No permitas que el formulario se envíe si el correo electrónico no es válido.
                 return;
             }
             try {
                 await axios.post('http://localhost:5000/api/register', this.userData);
-
+                alert('Usuario registrado con éxito.');
             } catch (error) {
-                console.error(error.response.data);
+                if (error.response.status === 409) {
+                    alert('El usuario ya existe con este correo. Intente nuevamente.');
+                } else {
+                    alert(error.response.data.message);
+                }
             }
         }
     }
