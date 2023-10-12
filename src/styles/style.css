@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Inter:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input {
+    background-color: transparent;
+    border: none;
+    min-height: 35px;
+    padding-left: .5rem;
+}
+input:focus, input:focus-visible {
+    outline: none;
+}
+.btn-primario {
+    border: none;
+    border-radius: 30px;
+    min-height: 50px;
+    padding: .4rem 2rem;
+    margin: auto;
+    background-color: #53a920;
+}
+.container-inicio-sesion {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-image: url('../assets/fondo-login.JPG');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+.container-form-login {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.form-login {
+    background-color: #f6f6f6;
+    border-radius: 80px;
+    padding: 2rem;
+    min-width: 450px;
+    max-width: 450px;
+}
+.form-hmac {
+    padding: 1rem;
+    padding-bottom: 0px;
+}
+.header-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container-input {
+    background-color: #d9d9d9;
+    padding: .3rem;
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 1.5rem;
+    min-width: calc(50% - 2rem);
+    flex-wrap: wrap;
+}
+.container-info-login {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 1rem;
+    max-width: 35%;
+}
+.container-title-login {
+    width: 100%;
+}
+.container-change-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+.tag {
+    border-radius: 30px;
+    border: none;
+    padding: .2rem .5rem;
+    cursor: pointer;
+}
+.container-title-login h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #53a920;
+    line-height: 1;
+}
+.container-title-login p{
+    color: #4f8239;
+    font-size: 24px;
+}
+@media (max-width: 1200px) {
+    .container-inicio-sesion {
+        background-image: none;
+    }
+    .container-form-login {
+        width: 70%;
+    }
+    .container-info-login {
+        width: 30%;
+    }
+}
