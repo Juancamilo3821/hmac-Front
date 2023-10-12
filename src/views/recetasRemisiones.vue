@@ -189,7 +189,6 @@ export default {
     font-family: 'Inter', sans-serif;
     color:#000000;
     font-weight:bold;
-    align-text:center;
     margin-left:auto;
     margin-right:auto;
 }
