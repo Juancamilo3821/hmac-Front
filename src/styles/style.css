@@ -62,7 +62,7 @@ input:focus, input:focus-visible {
 }
 .container-input {
     background-color: #d9d9d9;
-    padding: .4rem 1rem;
+    padding: .3rem;
     border-radius: 30px;
     display: flex;
     margin-bottom: 1.5rem;

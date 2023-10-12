@@ -13,41 +13,18 @@
                     <div style="padding: 0px 2rem"></div>
                 </div>
                 <form action="" class="form-hmac">
-                    <div style="display: flex; width: 100%;">
-                        <div class="container-input" style="margin-right: .5rem;">
-                            <input type="text" style="flex: 1 0 0%" placeholder="Nombre">
-                        </div>
-                        <div class="container-input" style="margin-left: .5rem;">
-                            <input type="text" style="flex: 1 0 0%" placeholder="Apellido">
-                        </div>
-                    </div>
                     <div class="container-input">
                         <img src="@/assets/icons/iconUser.svg">
                         <input type="text" style="flex: 1 0 0%" placeholder="Correo electrónico">
-                    </div>
-                    <div class="container-input-identidad">
-                        <div class="opciones-identidad">
-                            <select placeholder="Identidad">
-                                <option value="CC" title="Cédula de ciudadania">CC</option>
-                                <option value="TI" title="Tarjeta de identidad">TI</option>
-                                <option value="CE" title="Cédula de extranjeria">CE </option>
-                                <option value="PAS" title="Pasaporte">PAS</option>
-                            </select>
-                        </div>
-                        <div class="select-identidad">
-                            <div class="content-identidad">
-                                <img src="@/assets/icons/docImg.svg">
-                                <input type="text" style="flex: 1 0 0%" placeholder="N° de Documento">
-                            </div>
-                        </div>
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/numDocumento.svg">
                         <input type="text" style="flex: 1 0 0%" placeholder="Contraseña">
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
-                        <button class="btn-primario">
-                            CREAR CUENTA
+                        <button class="btn-primario" @click="$router.push({name: 'CompletarRegistro'})">
+                            Completar
+                            <img src="@/assets/icons/row-right.svg">
                         </button>
                     </div>
                 </form>

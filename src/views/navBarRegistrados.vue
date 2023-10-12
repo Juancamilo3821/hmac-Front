@@ -13,10 +13,6 @@
           Afiliados
         </router-link>
       </div>
-      <button class="boton-nav-login" @click="$router.push({name: 'IniciarSesion'})">
-        Iniciar Sesión
-        <img src="@/assets/icons/icon-person.svg">
-      </button>
     </div>
     <div class="content-sub-nav">
       <router-link class="item-nav" :to="{name:'home'}">

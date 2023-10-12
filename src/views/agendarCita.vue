@@ -2,7 +2,7 @@
     <div>
         <nav-bar/>
         <div class="container-cita-content">
-            <div class="content-cita" width="100%">
+            <div class="content-cita">
                 <div class="container-cita-card">
                     <button @click="$router.push({name: 'home'})" style="border:none; background-color:transparent;">
                         <img src="@/assets/icons/logo.svg">
@@ -35,7 +35,7 @@
                             <option value="11:30 am" title="Cédula de extranjeria">11:30 am</option>
                             <option value="2:50 pm" title="Pasaporte">2:50 pm</option>
                             <option value="3:00 pm" title="Pasaporte">3:00 pm</option>
-                            <option value="4:30 pm" title="Pasaporte">PAS</option>
+                            <option value="4:30 pm" title="Pasaporte">4:30 pm</option>
                          </select>
                     </div>
                     <div class="select-fecha">
@@ -163,6 +163,8 @@ export default {
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
     display:flex;
+    position:relative;
+    margin-left:auto;
 }
 .opciones-fecha{
     align-items:right;

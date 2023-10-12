@@ -12,7 +12,7 @@
                 CITA VIRTUAL
                 <img src="@/assets/icons/appointment.svg">
             </button>
-            <button class="boton-nav-login">
+            <button class="boton-nav-login" @click="$router.push({name: 'HistorialMedico'})">
                 DIRECTORIO MEDICO
                 <img src="@/assets/icons/directory.svg">
             </button>
@@ -49,7 +49,6 @@
                         <img src="@/assets/icons/row-right.svg">
                     </button>
                 </div>
-
             </div>
             <div class="item-home"> 
                 <img src="@/assets/spa.svg" class="img-item-home">

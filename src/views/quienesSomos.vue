@@ -43,18 +43,18 @@ export default {
     width:100%;
 }
 .content-card{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:50%;
-    align-items:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
 }
 .container-vision-card{
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     align-items: start;
-    width:80%;
-    justify-content:center;
+    width: 80%;
+    justify-content: center;
     text-decoration: none;
     color: black;
     background-color: #F6F6F6;

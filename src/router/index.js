@@ -65,6 +65,16 @@ const routes = [
         name: 'AgendarCita',
         component: () => import(/* webpackChunkName: "about" */ '../views/agendarCita.vue')
       },
+      {
+        path: '/CompletarRegistro',
+        name: 'CompletarRegistro',
+        component: () => import(/* webpackChunkName: "about" */ '../views/completarRegistro.vue')
+      },
+      {
+        path: '/HistorialMedico',
+        name: 'HistorialMedico',
+        component: () => import(/* webpackChunkName: "about" */ '../views/historialMedico.vue')
+      },
 ]
 const router = createRouter({
     history: createWebHistory(),
