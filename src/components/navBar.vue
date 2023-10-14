@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="content-nav-bar" id="nav">
-      <img src="@/assets/logo.svg">
+      <button @click="$router.push({name: 'home'})" style="border:none; background-color:transparent;">
+        <img src="@/assets/logo.svg">
+      </button>
       <div>
         <router-link class="item-nav" :to="{name:'Leydetransparencia'}">
           Ley de transparencia
@@ -25,8 +27,8 @@
       <router-link class="item-nav" :to="{name:'CatalogodeServicios'}">
         CATALOGO DE SERVICIOS
       </router-link>
-      <router-link class="item-nav" :to="{name:'Precios'}">
-        PRECIOS
+      <router-link class="item-nav" :to="{name:'metodosPago'}">
+        METODOS DE PAGO
       </router-link>
       <router-link class="item-nav" :to="{name:'TiendaNaturista'}">
         PRODUCTOS NATURISTAS

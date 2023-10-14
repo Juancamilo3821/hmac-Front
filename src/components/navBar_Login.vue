@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="content-nav-bar" id="nav">
-      <img src="@/assets/logo.svg">
-      <div>
+      <button @click="$router.push({name: 'HomeUsuario'})" style="border:none; background-color:transparent;">
+        <img src="@/assets/logo.svg" >
+      </button>
+      <div class="items-nav">
         <router-link class="item-nav" :to="{name:'Leydetransparencia'}">
           Ley de transparencia
         </router-link>
@@ -13,6 +15,12 @@
           Afiliados
         </router-link>
       </div>
+      <button class="boton-nav-login">
+          <button style="border:none; background-color:transparent;">
+              Cerrar Sesión
+          </button>
+        <img src="@/assets/icons/icon-person.svg">
+      </button>
     </div>
     <div class="content-sub-nav">
       <router-link class="item-nav" :to="{name:'home'}">
@@ -102,5 +110,12 @@ export default {
 }
 .content-sub-nav .item-nav:hover {
 text-decoration: none;
+}
+.items-nav{
+  justify-content: space-between;
+  align-items: start;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 </style>

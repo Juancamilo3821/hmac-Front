@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav-bar/>
-        <div class="container-header-leytransparencia">
+         <div class="container-header-leytransparencia">
             <img src="@/assets/homePageLogo.svg" class="img-historial" style = "width: 100%">
             <div class="content-header-historial">
                 <h2 class="title-header">
@@ -10,8 +10,8 @@
                     Daniel Felipe Villamizar Hernandez
                 </h2>
             </div>
-            <div class="content-cards-historial-historial" style="background-color:#53A920;">
-                <button style="border:none; background-color:transparent;">
+            <div class="content-cards-historial">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'HistorialMedico'})">
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
@@ -27,8 +27,8 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-recetas">
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemisiones'})">
+            <div class="content-cards-recetas-recetas" style="background-color:#53A920;">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemisiones'})" >
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
                         Recetas / Remisiones
@@ -38,12 +38,24 @@
 
         </div>
         <div class="container-cita-content">
+            <div class="content-recetas-page">
+                <button class="boton-recetas" style="background-color:#53A920;" >
+                    <h2 clas="text-recetas-remi">
+                        Recetas Medicas
+                    </h2>
+                </button>
+                <button class=" boton-remiciones" @click="$router.push({name: 'remiciones'})" >
+                    <h2 clas="text-recetas-remi" >
+                        Remiciones
+                    </h2>
+                </button>
+        </div>
         <div class="content-cita">
                 <div class="container-cita-card">
                     <img src="@/assets/icons/hmacLogo.svg" class="logo-cita-card">
                     <div>
                         <h2 class="text-historial">
-                            Historial Medico
+                            Recetas Medicas
                         </h2>
                     </div>
                     <div class="container-historial">
@@ -57,7 +69,7 @@
                             <tr>
                                 <td> Medicina General</td>
                                 <td> 10-09-2023 </td>
-                                <td> Fuerte dolor de estomago, acompañadode nauseas y mareo </td>
+                                <td> Acetaminofén 500 mg Ibuprofeno 400 mg </td>
                                 <td> 
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img" href="../../Historial.pdf"> 
@@ -67,7 +79,7 @@
                             <tr>
                                 <td> Psiquiatría </td>
                                 <td> 16-05-2023 </td>
-                                <td> Complejidad a la hora de concentrarse y encontrar la manera de realizarse </td>
+                                <td> Sertralina 50 mg Quetiapina 25 mg</td>
                                 <td> 
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -77,7 +89,7 @@
                             <tr>
                                 <td> Medicina General </td>
                                 <td> 7-10-2022 </td>
-                                <td> Quiere ser candidato para cirugía de Vasectomía </td>
+                                <td> Albendazol 200 mg Mebendazol 100 mg </td>
                                 <td>
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -87,7 +99,7 @@
                             <tr>
                                 <td> Odontologia </td>
                                 <td> 23-04-2022 </td>
-                                <td> Inquietud causada por las cordales</td>
+                                <td> Sertralina 100 mg Respirodona 2 mg Quetiapina 100 mg</td>
                                 <td>
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -104,7 +116,7 @@
 <script>
 import navBar from '@/components/navBar_Login.vue'
 export default {
-    name: 'HistorialMedico',
+    name: 'RecetasRemisiones',
     components: {
         navBar
     }
@@ -152,7 +164,7 @@ export default {
     width:100%;
     position:relative;
 }
-.content-cards-historial-historial{
+.content-cards-historial{
     position:absolute;
     top:140px;
     left:45%;
@@ -177,7 +189,6 @@ export default {
     font-family: 'Inter', sans-serif;
     color:#000000;
     font-weight:bold;
-    align-text:center;
     margin-left:auto;
     margin-right:auto;
 }
@@ -202,7 +213,7 @@ export default {
     margin-left:1rem;
     margin-right:1rem;
 }
-.content-cards-recetas{
+.content-cards-recetas-recetas{
     position:absolute;
     top:140px;
     left:81%;
@@ -242,7 +253,7 @@ export default {
   background-color: #F6F6F6;
   border-radius: 100px;
   padding: 1rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-right: 6rem;
   margin-left: 6rem;
 }
@@ -291,5 +302,40 @@ export default {
     padding-top:1rem;
 
 }
- 
+.content-recetas-page{
+    width: 100%;
+    min-height: 115px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.boton-recetas{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-right:4rem;
+    padding-left:4rem;
+    border-radius:40px;
+    margin:1rem;
+    border:none;
+}
+.boton-remiciones{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-right:4rem;
+    padding-left:4rem;
+    border-radius:40px;
+    margin:1rem;
+    border:none;
+}
+.text-recetas-remi{
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
+    padding:2rem;
+}
 </style>
