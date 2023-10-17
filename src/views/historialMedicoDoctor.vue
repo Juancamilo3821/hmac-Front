@@ -3,13 +3,6 @@
         <nav-bar/>
         <div class="container-header-leytransparencia">
             <img src="@/assets/homePageLogo.svg" class="img-historial" style = "width: 100%">
-            <div class="content-header-historial">
-                <h2 class="title-header">
-                    Hola,
-                    <br>
-                    Daniel Felipe Villamizar Hernandez
-                </h2>
-            </div>
             <div class="content-cards-historial-historial" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;">
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
@@ -20,7 +13,7 @@
                 </button>
             </div>
             <div class="content-cards-cita">
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'CitaVirtual'})">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'CitaVirtualDoctor'})">
                     <img src="@/assets/icons/citaImg.svg" class="img-cita">
                     <h2 class="title-cards">
                         Cita Virtual
@@ -28,7 +21,7 @@
                 </button>
             </div>
             <div class="content-cards-recetas">
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemisiones'})">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemicionesDoctor'})">
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
                         Recetas / Remisiones
@@ -46,18 +39,22 @@
                             Historial Medico
                         </h2>
                     </div>
+                    <div class="container-input" style="margin-right: auto; width:40%; margin-bottom:-1.5rem; margin-top:2rem;" >
+                        <img src="@/assets/icons/searchIcon.svg">
+                        <input type="text" style="flex: 1 0 0%" placeholder="Buscar">
+                    </div>
                     <div class="container-historial">
                         <table class="table-historial">
                             <tr class="th-class">
-                                <th> Consulta</th>
-                                <th> Fecha</th>
-                                <th> Motivo Principal</th>
-                                <th> Desgargar </th>
+                                <th> Nombre</th>
+                                <th> Tipo de documento</th>
+                                <th> Documento</th>
+                                <th> Descargar </th>
                             </tr>
                             <tr>
-                                <td> Medicina General</td>
-                                <td> 10-09-2023 </td>
-                                <td> Fuerte dolor de estomago, acompañadode nauseas y mareo </td>
+                                <td> Roberto Hernández Zarate</td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 100538374 </td>
                                 <td> 
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img" href="../../Historial.pdf"> 
@@ -65,9 +62,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td> Psiquiatría </td>
-                                <td> 16-05-2023 </td>
-                                <td> Complejidad a la hora de concentrarse y encontrar la manera de realizarse </td>
+                                <td> Sofia Martina Mogollón </td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 1005369876 </td>
                                 <td> 
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -75,9 +72,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td> Medicina General </td>
-                                <td> 7-10-2022 </td>
-                                <td> Quiere ser candidato para cirugía de Vasectomía </td>
+                                <td> Valentina Sepúlveda Villamizar  </td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 1005000452 </td>
                                 <td>
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -85,9 +82,19 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td> Odontologia </td>
-                                <td> 23-04-2022 </td>
-                                <td> Inquietud causada por las cordales</td>
+                                <td> Ricardo Alfonzo Ramirez </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 1007239543</td>
+                                <td>
+                                    <button style="background-color:transparent; border:none;" > 
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
+                                    </button> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> José Luis Cardozo  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 1008369367</td>
                                 <td>
                                     <button style="background-color:transparent; border:none;" > 
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
@@ -102,9 +109,9 @@
     </div>
 </template>
 <script>
-import navBar from '@/components/navBar_Login.vue'
+import navBar from '@/components/navBar_Doctor.vue'
 export default {
-    name: 'HistorialMedico',
+    name: 'HistorialDoctor',
     components: {
         navBar
     }
@@ -195,6 +202,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1.5rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-cita{
     margin-bottom:2rem;
@@ -218,6 +226,7 @@ export default {
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-recetas{
     margin-bottom:.4rem;
@@ -287,7 +296,7 @@ export default {
 
 }
 .download-img{
-    padding-left:5.5rem;
+    padding-left:3.1rem;
     padding-top:1rem;
 
 }

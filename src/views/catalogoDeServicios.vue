@@ -1,14 +1,7 @@
 <template>
     <div>
         <nav-bar/>
-        <div class="container-header-catalogo">
-            <img src="@/assets/catalogueServices.svg" class="img-header" style = "width: 100%">
-            <div class="content-header">
-                <p class="text-nav">
-                    Inicio / Nuestros servicios
-                </p>
-            </div>
-        </div>
+        
         <div class="container-sub-title">
             <span class="line-subtitle"></span>
             <h2 class="subtitle-catalogo subtitle-catalogo--left">

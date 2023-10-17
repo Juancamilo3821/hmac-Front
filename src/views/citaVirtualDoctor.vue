@@ -3,15 +3,8 @@
         <nav-bar/>
         <div class="container-header-leytransparencia">
             <img src="@/assets/homePageLogo.svg" class="img-historial" style = "width: 100%">
-            <div class="content-header-historial">
-                <h2 class="title-header">
-                    Hola,
-                    <br>
-                    Daniel Felipe Villamizar Hernandez
-                </h2>
-            </div>
             <div class="content-cards-historial" >
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'HistorialMedico'})">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'HistorialDoctor'})">
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
@@ -20,7 +13,7 @@
                 </button>
             </div>
             <div class="content-cards-cita-cita" style="background-color:#53A920;">
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'CitaVirtual'})">
+                <button style="border:none; background-color:transparent;" >
                     <img src="@/assets/icons/citaImg.svg" class="img-cita">
                     <h2 class="title-cards">
                         Cita Virtual
@@ -28,7 +21,7 @@
                 </button>
             </div>
             <div class="content-cards-recetas">
-                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemisiones'})">
+                <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemicionesDoctor'})">
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
                         Recetas / Remisiones
@@ -40,46 +33,107 @@
             <div class="content-cita">
                 <div class="container-cita-card">
                     <img src="@/assets/icons/hmacLogo.svg" class="logo-cita-card">
-                    <h2 class="title-cita">
-                        Ingresa los siguientes datos para agendar tu cita:
-                    </h2>
-                    <p class="text-cita">
-                        Los campos señalados con asterisco (*) son obligatorios, revisa muy bien los datos antes de finalizar, recuerda que los datos que estás registrando son los que HMAC tomará para tramitar tu solicitud.
-                    </p>
-                    
-                    <div class="content-item-cita">
-                        <p class="title-item-cita">
-                            <img src="@/assets/icons/tipoDocumento.svg">
-                            <input type="text" style="flex: 1 0 0%" placeholder="Tipo de documento: ">
-                        </p>
+                    <div>
+                        <h2 class="text-historial">
+                            Citas en Cola
+                        </h2>
                     </div>
-                    <div class="content-item-cita">
-                        <p class="title-item-cita"> 
-                            <img src="@/assets/icons/numDocumento.svg">
-                            <input type="text" style="flex: 1 0 0%" placeholder="Número de documento: ">
-                        </p>
+                    <div class="container-input" style="margin-right: auto; width:40%; margin-bottom:-1.5rem; margin-top:2rem;" >
+                        <img src="@/assets/icons/searchIcon.svg">
+                        <input type="text" style="flex: 1 0 0%" placeholder="Buscar">
                     </div>
-                    <button class="button-item-cita"  @click="$router.push({name: 'AgendarCita'})">
-                        INGRESAR
-                    </button>
-                    <p class="text-post-button"> 
-                            Olvidaste tu contraseña?
-                    </p>
+                    <div class="container-historial">
+                        <table class="table-historial">
+                            <tr class="th-class">
+                                <th> Nombre</th>
+                                <th> Tipo de documento</th>
+                                <th> Documento</th>
+                                <th> Hora </th>
+                            </tr>
+                            <tr>
+                                <td> Roberto Hernández Zarate</td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 100538374 </td>
+                                <td> 8:00 am </td>
+                        
+                            </tr>
+                            <tr>
+                                <td> Sofia Martina Mogollón </td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 1005369876 </td>
+                                <td> 8:30 am </td>
+                            </tr>
+                            <tr>
+                                <td> Valentina Sepúlveda Villamizar  </td>
+                                <td> Cedula de Ciudadania </td>
+                                <td> 1005000452 </td>
+                                <td> 9:00 am </td>
+                            </tr>
+                            <tr>
+                                <td> Ricardo Alfonzo Ramirez </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 1007239543</td>
+                                <td> 9:30 am </td>
+                            </tr>
+                            <tr>
+                                <td> José Luis Cardozo  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 1008369367</td>
+                                <td> 10:00 am </td>
+                            </tr>
+                            <tr>
+                                <td> Silvia Maria Romera  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10545657</td>
+                                <td> 10:30 am </td>
+                            </tr>
+                            <tr>
+                                <td> Adrián Fernandez  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 75076432</td>
+                                <td> 11:00 am </td>
+                            </tr>
+                            <tr>
+                                <td> Candelaria Beltran </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10535084 </td>
+                                <td> 11:30 am </td>
+                            </tr>
+                            <tr>
+                                <td> Jacinto Guevara </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10529631</td>
+                                <td> 12:00 am </td>
+                            </tr>
+                            <tr>
+                                <td> Jose Francisco Ferreira </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10545657</td>
+                                <td> 12:30 am </td>
+                            </tr>
+                            <tr>
+                                <td> Álvaro Padilla  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10536636</td>
+                                <td> 1:00 pm </td>
+                            </tr>
+                            <tr>
+                                <td> Manuel Jesus Megias  </td>
+                                <td> Cedula de Ciudadanía </td>
+                                <td> 10542190 </td>
+                                <td> 1:30 pm </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="content-extra-cita">
-            <img src="@/assets/icons/extraCita.svg">
-            <p class="extra-cita">
-                Recuerda que los trámites de Agendamiento son totalmente gratuitos.
-            </p>
         </div>
     </div>
 </template>
 <script>
-import navBar from '@/components/navBar_Login.vue'
+import navBar from '@/components/navBar_Doctor.vue'
 export default {
-    name: 'CitaVirtual',
+    name: 'CitaVirtualDoctor',
     components: {
         navBar
     }
@@ -243,6 +297,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-historial{
     margin-bottom:2rem;
@@ -295,6 +350,7 @@ export default {
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-recetas{
     margin-bottom:.4rem;
@@ -370,4 +426,3 @@ export default {
 }
 
 </style>
-
