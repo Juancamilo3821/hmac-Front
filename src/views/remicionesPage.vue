@@ -46,7 +46,7 @@
                 </button>
                 <button class=" boton-remiciones" style="background-color:#53A920;">
                     <h2 clas="text-recetas-remi">
-                        Remiciones
+                        Remisiones
                     </h2>
                 </button>
         </div>

@@ -46,7 +46,7 @@
                 </button>
                 <button class=" boton-remiciones" @click="$router.push({name: 'remiciones'})" >
                     <h2 clas="text-recetas-remi" >
-                        Remiciones
+                        Remisiones
                     </h2>
                 </button>
         </div>

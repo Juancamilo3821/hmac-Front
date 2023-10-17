@@ -12,7 +12,7 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-cita" style="background-color:#53A920;">
+            <div class="content-cards-cita-cita" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;" >
                     <img src="@/assets/icons/citaImg.svg" class="img-cita">
                     <h2 class="title-cards">
@@ -297,6 +297,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-historial{
     margin-bottom:2rem;
@@ -312,7 +313,7 @@ export default {
     margin-left:auto;
     margin-right:auto;
 }
-.content-cards-cita{
+.content-cards-cita-cita{
     position:absolute;
     top:140px;
     left:63%;
@@ -349,6 +350,7 @@ export default {
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-recetas{
     margin-bottom:.4rem;

@@ -20,7 +20,7 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-recetas" style="background-color:#53A920;">
+            <div class="content-cards-recetas-recetas" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;">
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
@@ -38,7 +38,7 @@
                 </button>
                 <button class=" boton-remiciones" @click="$router.push({name: 'RemicionesDoctor'})" >
                     <h2 clas="text-recetas-remi" >
-                        Remiciones
+                        Remisiones
                     </h2>
                 </button>
         </div>
@@ -187,6 +187,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-historial{
     margin-bottom:2rem;
@@ -215,6 +216,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1.5rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-cita{
     margin-bottom:2rem;
@@ -222,7 +224,7 @@ export default {
     margin-left:1rem;
     margin-right:1rem;
 }
-.content-cards-recetas{
+.content-cards-recetas-recetas{
     position:absolute;
     top:140px;
     left:81%;
