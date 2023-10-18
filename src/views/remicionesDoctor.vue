@@ -8,7 +8,7 @@
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
-                        Medico
+                        Médico
                     </h2>
                 </button>
             </div>
@@ -20,7 +20,7 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-recetas" style="background-color:#53A920;">
+            <div class="content-cards-recetas-recetas" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;"  >
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
@@ -34,12 +34,12 @@
             <div class="content-recetas-page">
                 <button class="boton-recetas" @click="$router.push({name: 'RecetasRemicionesDoctor'})" >
                     <h2 clas="text-recetas-remi">
-                        Recetas Medicas
+                        Recetas Médicas
                     </h2>
                 </button>
                 <button class=" boton-remiciones" style="background-color:#53A920;">
                     <h2 clas="text-recetas-remi">
-                        Remiciones
+                        Remisiones
                     </h2>
                 </button>
         </div>
@@ -56,7 +56,7 @@
                         <input type="text" style="flex: 1 0 0%" placeholder="Buscar">
                     </div>
                     <div class="container-historial">
-                        <table class="table-historial">
+                        <table class="table-historial" >
                             <tr class="th-class">
                                 <th> Nombre</th>
                                 <th> Documento</th>

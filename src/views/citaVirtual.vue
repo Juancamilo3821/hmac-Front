@@ -15,7 +15,7 @@
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
-                        Medico
+                        Médico
                     </h2>
                 </button>
             </div>
@@ -243,6 +243,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-historial{
     margin-bottom:2rem;
@@ -295,6 +296,7 @@ export default {
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-recetas{
     margin-bottom:.4rem;

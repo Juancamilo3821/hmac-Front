@@ -10,7 +10,7 @@
                         <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                         <h2 class="title-cards-historial">
                             Historial 
-                            Medico
+                            Médico
                         </h2>
                     </button>
                 </div>

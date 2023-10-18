@@ -15,7 +15,7 @@
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
-                        Medico
+                        Médico
                     </h2>
                 </button>
             </div>
@@ -43,7 +43,7 @@
                     <img src="@/assets/icons/hmacLogo.svg" class="logo-cita-card">
                     <div>
                         <h2 class="text-historial">
-                            Historial Medico
+                            Historial Médico
                         </h2>
                     </div>
                     <div class="container-historial">
@@ -59,9 +59,9 @@
                                 <td> 10-09-2023 </td>
                                 <td> Fuerte dolor de estomago, acompañadode nauseas y mareo </td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" href="../../Historial.pdf"> 
-                                    </button> 
+                                    <a download href="Historial.pdf" >
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                             <tr>
@@ -69,9 +69,9 @@
                                 <td> 16-05-2023 </td>
                                 <td> Complejidad a la hora de concentrarse y encontrar la manera de realizarse </td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
+                                    <a  download href="Historial.pdf">
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    </a>  
                                 </td>
                             </tr>
                             <tr>
@@ -195,6 +195,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1.5rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-cita{
     margin-bottom:2rem;
@@ -218,6 +219,7 @@ export default {
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-recetas{
     margin-bottom:.4rem;

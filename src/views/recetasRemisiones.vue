@@ -15,7 +15,7 @@
                     <img src="@/assets/icons/historialMedico.svg" class="img-historial">
                     <h2 class="title-cards">
                         Historial 
-                        Medico
+                        Médico
                     </h2>
                 </button>
             </div>
@@ -41,12 +41,12 @@
             <div class="content-recetas-page">
                 <button class="boton-recetas" style="background-color:#53A920;" >
                     <h2 clas="text-recetas-remi">
-                        Recetas Medicas
+                        Recetas Médicas
                     </h2>
                 </button>
                 <button class=" boton-remiciones" @click="$router.push({name: 'remiciones'})" >
                     <h2 clas="text-recetas-remi" >
-                        Remiciones
+                        Remisiones
                     </h2>
                 </button>
         </div>
@@ -55,7 +55,7 @@
                     <img src="@/assets/icons/hmacLogo.svg" class="logo-cita-card">
                     <div>
                         <h2 class="text-historial">
-                            Recetas Medicas
+                            Recetas Médicas
                         </h2>
                     </div>
                     <div class="container-historial">
@@ -178,6 +178,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-historial{
     margin-bottom:2rem;
@@ -206,6 +207,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1.5rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-cita{
     margin-bottom:2rem;
@@ -298,7 +300,7 @@ export default {
 
 }
 .download-img{
-    padding-left:5.5rem;
+    padding-left:4.8rem;
     padding-top:1rem;
 
 }
