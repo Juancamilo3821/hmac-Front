@@ -296,7 +296,7 @@ export default {
 
 }
 .download-img{
-    padding-left:3.5rem;
+    padding-left:3.1rem;
     padding-top:1rem;
 
 }

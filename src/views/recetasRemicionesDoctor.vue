@@ -216,6 +216,7 @@ export default {
     background-color: #F6F6F6;
     padding: 1.5rem;
     border-radius: 40px;
+    opacity: .8;
 }
 .img-cita{
     margin-bottom:2rem;
