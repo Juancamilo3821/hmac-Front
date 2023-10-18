@@ -65,6 +65,11 @@ const routes = [
     name: 'HistorialMedico',
     component: () => import(/* webpackChunkName: "about" */ '../views/historialMedico.vue')
   },
+  {
+    path: '/metodosPago',
+    name: 'metodosPago',
+    component: () => import(/* webpackChunkName: "about" */ '../views/metodosPago.vue')
+  },
 ]
 const router = createRouter({
   history: createWebHistory(),

@@ -12,7 +12,7 @@
                     </button>
                     <div style="padding: 0px 2rem"></div>
                 </div>
-                <form action="" class="form-hmac">
+                <div action="" class="form-hmac">
                     <div class="container-input">
                         <img src="@/assets/icons/iconUser.svg">
                         <input v-model="userData.NOMBRE_USUARIO" @input="validateEmail" type="email" style="flex: 1 0 0%"
@@ -29,7 +29,7 @@
                             <img src="@/assets/icons/row-right.svg">
                         </button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="container-change-page">
                 <p style="margin-bottom: 0; padding-right: .4rem;">Ya tienes una cuenta?</p>

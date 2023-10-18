@@ -10,12 +10,11 @@
                     <img src="@/assets/icons/logo.svg">
                     <div style="padding: 0px 2rem"></div>
                 </div>
-                <form action="" class="form-hmac">
+                <div class="form-hmac">
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
                         <input v-model="userData.NOMBRE_USUARIO" @input="validateEmail" type="email" style="flex: 1 0 0%"
                             placeholder="Correo electrónico">
-                        <div v-if="!emailValid" class="error-message">El correo electrónico no es válido.</div>
                     </div>
                     <div class="container-input">
                         <img src="@/assets/icons/row-right.svg">
@@ -26,8 +25,9 @@
                             INGRESAR
                         </button>
                     </div>
+                    <div v-if="!emailValid" class="error-message text-danger mt-4 text-center">El correo electrónico no es válido.</div>
                     <p style="text-align: center; margin-top: 1rem; margin-bottom: 0;">¿Olvidaste tu contraseña?</p>
-                </form>
+                </div>
             </div>
             <div class="container-change-page">
                 <p style="margin-bottom: 0; padding-right: .4rem;">¿No tiene una cuenta?</p>
@@ -65,9 +65,7 @@ export default {
             this.emailValid = emailRegex.test(this.userData.NOMBRE_USUARIO);
         },
         async Login() {
-            if (!this.emailValid) {
-                return;
-            }
+            if (!this.emailValid) return
             try {
                 const response = await axios.post('http://localhost:5000/api/login', this.userData);
                 Cookies.set('connect.sid', response.headers['set-cookie']);

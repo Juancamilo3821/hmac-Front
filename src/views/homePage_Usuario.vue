@@ -83,14 +83,8 @@
                         <img src="@/assets/icons/row-right.svg">
                     </button>
                 </div>
-
             </div>
-
         </div>
-
-        
-        
-
     </div>
 </template>
 <script>
@@ -231,6 +225,7 @@ export default {
     border-radius: 40px;
     overflow:hidden;
     max-width: 350px;
+    margin-bottom: 1rem;
 }
 
 .img-item-home {

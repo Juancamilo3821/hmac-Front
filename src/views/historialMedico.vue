@@ -59,7 +59,7 @@
                                 <td> 10-09-2023 </td>
                                 <td> Fuerte dolor de estomago, acompañadode nauseas y mareo </td>
                                 <td> 
-                                    <a download href="Historial.pdf" >
+                                    <a href="../downloads/Historial.pdf" download>
                                         <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
                                     </a> 
                                 </td>
