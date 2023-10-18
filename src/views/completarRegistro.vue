@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
-                        <button class="btn-primario" @click="RegistrarPaciente">
+                        <button class="btn-primario" @click="$router.push({name: 'HomeUsuario'})">
                             CREAR CUENTA
                         </button>
                     </div>

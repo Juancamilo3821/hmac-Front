@@ -69,9 +69,9 @@
                                 <td> 16-05-2023 </td>
                                 <td> Complejidad a la hora de concentrarse y encontrar la manera de realizarse </td>
                                 <td> 
-                                    <a  download href="Historial.pdf">
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </a>  
+                                    <a href="../downloads/Historial.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>   
                                 </td>
                             </tr>
                             <tr>
@@ -79,9 +79,9 @@
                                 <td> 7-10-2022 </td>
                                 <td> Quiere ser candidato para cirugía de Vasectomía </td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/Historial.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                             <tr>
@@ -89,9 +89,9 @@
                                 <td> 23-04-2022 </td>
                                 <td> Inquietud causada por las cordales</td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/Historial.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                         </table>

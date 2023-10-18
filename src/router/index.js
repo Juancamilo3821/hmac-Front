@@ -47,7 +47,7 @@ const routes = [
   },
   {
     path: '/CitaVirtual',
-    name: 'CirtualVirtual',
+    name: 'CitaVirtual',
     component: () => import(/* webpackChunkName: "about" */ '../views/citaVirtual.vue')
   },
   {
@@ -56,7 +56,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/agendarCita.vue')
   },
   {
-    path: '/CompletarRegistro/:userId/:correo',
+    path: '/CompletarRegistro',
     name: 'CompletarRegistro',
     component: () => import(/* webpackChunkName: "about" */ '../views/completarRegistro.vue'),
   },
@@ -69,6 +69,46 @@ const routes = [
     path: '/metodosPago',
     name: 'metodosPago',
     component: () => import(/* webpackChunkName: "about" */ '../views/metodosPago.vue')
+  },
+  {
+    path: '/RecetasRemisiones',
+    name: 'RecetasRemisiones',
+    component: () => import(/* webpackChunkName: "about" */ '../views/recetasRemisiones.vue')
+  },
+  {
+    path: '/Remiciones',
+    name: 'Remiciones',
+    component: () => import(/* webpackChunkName: "about" */ '../views/remicionesPage.vue')
+  },
+  {
+    path: '/HomeUsuario',
+    name: 'HomeUsuario',
+    component: () => import(/* webpackChunkName: "about" */ '../views/homePage_Usuario.vue')
+  },
+  {
+    path: '/HomeDoctor',
+    name: 'HomeDoctor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/homePage_Doc.vue')
+  },
+  {
+    path: '/HistorialDoctor',
+    name: 'HistorialDoctor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/historialMedicoDoctor.vue')
+  },
+  {
+    path: '/CitaVirtualDoctor',
+    name: 'CitaVirtualDoctor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/citaVirtualDoctor.vue')
+  },
+  {
+    path: '/RecetasRemicionesDoctor',
+    name: 'RecetasRemicionesDoctor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/recetasRemicionesDoctor.vue')
+  },
+  {
+    path: '/RemicionesDoctor',
+    name: 'RemicionesDoctor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/remicionesDoctor.vue')
   },
 ]
 const router = createRouter({

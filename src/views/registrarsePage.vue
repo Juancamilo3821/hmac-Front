@@ -24,7 +24,7 @@
                         <input v-model="userData.HASH" type="password" style="flex: 1 0 0%" placeholder="Contraseña" required>
                     </div>
                     <div style="display: flex; padding-top: 1rem;">
-                        <button class="btn-primario" @click="Registrar()">
+                        <button class="btn-primario" @click="$router.push({name: 'CompletarRegistro'})">
                             Completar
                             <img src="@/assets/icons/row-right.svg">
                         </button>

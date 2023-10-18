@@ -44,7 +44,7 @@
                         Recetas Médicas
                     </h2>
                 </button>
-                <button class=" boton-remiciones" @click="$router.push({name: 'remiciones'})" >
+                <button class=" boton-remiciones" @click="$router.push({name: 'Remiciones'})" >
                     <h2 clas="text-recetas-remi" >
                         Remisiones
                     </h2>
@@ -71,9 +71,9 @@
                                 <td> 10-09-2023 </td>
                                 <td> Acetaminofén 500 mg Ibuprofeno 400 mg </td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" href="../../Historial.pdf"> 
-                                    </button> 
+                                    <a href="../downloads/RecetasPaciente.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                             <tr>
@@ -81,9 +81,9 @@
                                 <td> 16-05-2023 </td>
                                 <td> Sertralina 50 mg Quetiapina 25 mg</td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/RecetasPaciente.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                             <tr>
@@ -91,9 +91,9 @@
                                 <td> 7-10-2022 </td>
                                 <td> Albendazol 200 mg Mebendazol 100 mg </td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/RecetasPaciente.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -101,9 +101,9 @@
                                 <td> 23-04-2022 </td>
                                 <td> Sertralina 100 mg Respirodona 2 mg Quetiapina 100 mg</td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/RecetasPaciente.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                         </table>

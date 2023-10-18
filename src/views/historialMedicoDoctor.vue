@@ -56,9 +56,9 @@
                                 <td> Cedula de Ciudadania </td>
                                 <td> 100538374 </td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" href="../../Historial.pdf"> 
-                                    </button> 
+                                    <a href="../downloads/HistorialMedico.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>  
                                 </td>
                             </tr>
                             <tr>
@@ -66,9 +66,9 @@
                                 <td> Cedula de Ciudadania </td>
                                 <td> 1005369876 </td>
                                 <td> 
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/HistorialMedico.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>  
                                 </td>
                             </tr>
                             <tr>
@@ -76,9 +76,9 @@
                                 <td> Cedula de Ciudadania </td>
                                 <td> 1005000452 </td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/HistorialMedico.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>  
                                 </td>
                             </tr>
                             <tr>
@@ -86,9 +86,9 @@
                                 <td> Cedula de Ciudadanía </td>
                                 <td> 1007239543</td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/HistorialMedico.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a>  
                                 </td>
                             </tr>
                             <tr>
@@ -96,9 +96,9 @@
                                 <td> Cedula de Ciudadanía </td>
                                 <td> 1008369367</td>
                                 <td>
-                                    <button style="background-color:transparent; border:none;" > 
-                                        <img src="@/assets/icons/downloadImg.svg" class="download-img"> 
-                                    </button> 
+                                    <a href="../downloads/HistorialMedico.pdf" download>
+                                        <img src="@/assets/icons/downloadImg.svg" class="download-img" > 
+                                    </a> 
                                 </td>
                             </tr>
                         </table>
