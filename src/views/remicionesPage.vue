@@ -27,7 +27,7 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-recetas" style="background-color:#53A920;">
+            <div class="content-cards-recetas-recetas" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;" @click="$router.push({name: 'RecetasRemisiones'})" >
                     <img src="@/assets/icons/recetasImg.svg" class="img-recetas">
                     <h2 class="title-cards-remi">
@@ -213,7 +213,7 @@ export default {
     margin-left:1rem;
     margin-right:1rem;
 }
-.content-cards-recetas{
+.content-cards-recetas-recetas{
     position:absolute;
     top:140px;
     left:81%;

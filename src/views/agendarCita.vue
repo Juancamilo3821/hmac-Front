@@ -19,7 +19,7 @@
                     </h2>
                 </button>
             </div>
-            <div class="content-cards-cita" style="background-color:#53A920;">
+            <div class="content-cards-cita-cita" style="background-color:#53A920;">
                 <button style="border:none; background-color:transparent;" @click="$router.push({name: 'CitaVirtual'})">
                     <img src="@/assets/icons/citaImg.svg" class="img-cita">
                     <h2 class="title-cards">
@@ -43,9 +43,9 @@
                     <h2 class="title-cita" style="margin-top:1rem;">
                         INGRESA EL DIA Y LA FECHA DE MEJOR DISPONIBILIDAD
                     </h2>
-                    <div class="container-input-fecha" style="width:100px; margin-left:18rem; justify-content:center; margin-top:1rem;">
+                    <div class="container-input-fecha" style="width:100px; margin-left:21rem; justify-content:center; margin-top:1rem;">
                         <div class="opciones-fecha" style="padding-top:2px;">
-                            <select placeholder="Identidad" style="border:none; background-color:transparent; padding-top:2px;">
+                            <select placeholder="Identidad" style="border:none; background-color:transparent; padding-top:4px; padding-right:.2rem; margin-right:2rem;">
                                 <option value="8:00 am" title="8 de la mañana"> 8:00 am</option>
                                 <option value="9:45 am" title="9:45 de la mañana"> 9:45 am</option>
                                 <option value="11:30 am" title="11:30 de la mañana"> 11:30 am</option>
@@ -251,7 +251,7 @@ export default {
     margin-left:auto;
     margin-right:auto;
 }
-.content-cards-cita{
+.content-cards-cita-cita{
     position:absolute;
     top:140px;
     left:63%;
@@ -367,8 +367,9 @@ export default {
     border-radius: 30px;
     display: flex;
     margin-bottom: 1.5rem;
-    min-width: calc(50% - 2rem);
+    min-width: calc(40% - 2rem);
     flex-wrap: wrap;
+    
 }
 .opciones-fecha{
     align-items:right;
